@@ -1,0 +1,5 @@
+../Core/Src/kinematics_odometry.c:3:6:Odometry_Init	16	static
+../Core/Src/kinematics_odometry.c:11:6:Kinematics_Inverse	40	static
+../Core/Src/kinematics_odometry.c:22:14:Wrap_Angle	16	static
+../Core/Src/kinematics_odometry.c:28:6:Odometry_Update	72	static
+../Core/Src/kinematics_odometry.c:56:6:Encoder_Update	24	static

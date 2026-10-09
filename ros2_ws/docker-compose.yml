@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ros2_humble:
+    image: ros:humble-ros-base
+    container_name: rock5c_ros2
+    restart: unless-stopped
+    network_mode: "host"       # Quan trọng: Cho phép ROS 2 kết nối DDS LAN (RViz trên Laptop)
+    privileged: true           # Cho phép truy cập phần cứng USB Lidar, Camera, UART
+    environment:
+      - ROS_DOMAIN_ID=30       # Có thể đổi theo ý muốn (Đồng bộ với Laptop)
+      - DISPLAY=$DISPLAY       # Nếu dùng Remote Desktop, sửa thành DISPLAY=:10.0
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /dev:/dev              # Map toàn bộ thiết bị /dev để cắm nóng USB
+      - ./src:/ros2_ws/src     # Map thư mục mã nguồn
+    command: tail -F /dev/null # Giữ container luôn chạy ngầm

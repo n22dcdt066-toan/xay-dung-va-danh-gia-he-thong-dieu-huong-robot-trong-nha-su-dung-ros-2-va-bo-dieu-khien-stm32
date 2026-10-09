@@ -1,0 +1,17 @@
+../Core/Src/main.c:120:6:Motor_Set_PWM	5
+../Core/Src/main.c:169:5:main	1
+../Core/Src/main.c:281:6:SystemClock_Config	3
+../Core/Src/main.c:327:13:MX_TIM1_Init	10
+../Core/Src/main.c:414:13:MX_TIM2_Init	3
+../Core/Src/main.c:463:13:MX_TIM3_Init	3
+../Core/Src/main.c:512:13:MX_TIM4_Init	3
+../Core/Src/main.c:561:13:MX_TIM5_Init	3
+../Core/Src/main.c:610:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:641:13:MX_DMA_Init	1
+../Core/Src/main.c:662:13:MX_GPIO_Init	1
+../Core/Src/main.c:704:6:HAL_UART_RxCpltCallback	2
+../Core/Src/main.c:722:6:StartControlTask	2
+../Core/Src/main.c:772:6:StartSafetyTask	1
+../Core/Src/main.c:793:6:StartCommTask	6
+../Core/Src/main.c:851:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:869:6:Error_Handler	1

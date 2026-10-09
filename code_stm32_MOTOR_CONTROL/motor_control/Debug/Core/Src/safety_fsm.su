@@ -1,0 +1,6 @@
+../Core/Src/safety_fsm.c:3:6:FSM_Init	16	static
+../Core/Src/safety_fsm.c:8:6:FSM_Update	16	static
+../Core/Src/safety_fsm.c:33:6:FSM_Feed_Watchdog	16	static
+../Core/Src/safety_fsm.c:42:6:FSM_Trigger_Fault	16	static
+../Core/Src/safety_fsm.c:46:6:FSM_Reset_Fault	16	static
+../Core/Src/safety_fsm.c:53:6:FSM_Is_Running	16	static
